@@ -3,8 +3,6 @@ import chatTypes from "./chat.types";
 import { setChats } from "./chat.actions";
 import { handleGetAllChats } from "./chat.helpers";
 
-// ROOM DETAILS
-
 function* startGetChats({ payload }) {
   try {
     const chats = yield handleGetAllChats(payload);

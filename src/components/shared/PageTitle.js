@@ -1,7 +1,5 @@
-import { wp } from "@utils/responsive";
 import React from "react";
-import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
-import Feather from "@expo/vector-icons/Feather";
+import { View, Text, StyleSheet } from "react-native";
 
 export default ({ title }) => {
   return (
@@ -16,6 +14,5 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: "Poppins-Bold",
     marginVertical: 25,
-    // paddingHorizontal: wp(25),
   },
 });

@@ -2,7 +2,6 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Messages, MessageDetail } from "@screens";
 import TabNavigation from "./TabNavigation";
-import { useDispatch } from "react-redux";
 
 const AppStack = createNativeStackNavigator();
 
@@ -13,8 +12,6 @@ const AppStackNames = {
 };
 
 function AppNavigation({ user }) {
-  // const dispatch = useDispatch();
-
   return (
     <AppStack.Navigator
       screenOptions={{ headerShown: false }}
