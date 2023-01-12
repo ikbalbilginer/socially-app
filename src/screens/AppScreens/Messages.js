@@ -4,15 +4,13 @@ import {
   View,
   ScrollView,
   ImageBackground,
-  FlatList,
-  Image,
   TextInput,
 } from "react-native";
 import { Entypo } from "@expo/vector-icons";
 
 import CustomHeader from "@components/shared/CustomHeader";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { StoriesBar, Text, PageTitle } from "@components";
+import { PageTitle } from "@components";
 import messbg from "@assets/messbg.png";
 import { Feather } from "@expo/vector-icons";
 import { hp, wp } from "@utils/responsive";

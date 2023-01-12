@@ -1,16 +1,7 @@
 import { hp, wp } from "@utils/responsive";
 import React from "react";
 
-import {
-  StyleSheet,
-  View,
-  ScrollView,
-  ImageBackground,
-  FlatList,
-  Image,
-  TextInput,
-  TouchableOpacity,
-} from "react-native";
+import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
 import Text from "../shared/Text";
 import { useNavigation } from "@react-navigation/native";
 import { useDispatch, useSelector } from "react-redux";

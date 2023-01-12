@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  StyleSheet,
-  View,
-  ScrollView,
-  ImageBackground,
-  FlatList,
-} from "react-native";
+import { StyleSheet, ScrollView, ImageBackground } from "react-native";
 import CustomHeader from "@components/shared/CustomHeader";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StoriesBar, Text, PageTitle, FeedCard } from "@components";
@@ -14,12 +8,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { wp } from "@utils/responsive";
 import { useSelector } from "react-redux";
 const Home = ({ navigation }) => {
-  const [state, setState] = useState(0);
-
   const { stories, feed } = useSelector(({ auth: { user } }) => user);
-  const { user } = useSelector(({ auth }) => {
-    return { user: auth.user };
-  });
 
   return (
     <ImageBackground resizeMode="cover" style={{ flex: 1 }} source={homebg}>

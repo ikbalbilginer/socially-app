@@ -5,16 +5,13 @@ import {
   ScrollView,
   ImageBackground,
   Image,
-  FlatList,
   Dimensions,
 } from "react-native";
-import CustomHeader from "@components/shared/CustomHeader";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { StoriesBar, Text, PageTitle } from "@components";
+import { Text } from "@components";
 import profbg from "@assets/profbg.png";
 import { Feather } from "@expo/vector-icons";
 import { hp, wp } from "@utils/responsive";
-import userSagas from "@redux/Auth/auth.sagas";
 import { useSelector } from "react-redux";
 const screenWidth = Dimensions.get("window").width;
 

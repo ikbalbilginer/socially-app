@@ -1,11 +1,11 @@
 import React from "react";
-import { TouchableOpacity, Image, Text, View } from "react-native";
-import { useDispatch, useSelector } from "react-redux";
+import { Image, View } from "react-native";
+import { useDispatch } from "react-redux";
 import colors from "@constants/colors.js";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Profile, Home } from "@screens";
 import midbtn from "@assets/midbtn.png";
-import { MaterialCommunityIcons, Feather } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 
@@ -16,11 +16,6 @@ const TabNames = {
 
 function TabNavigation() {
   const dispatch = useDispatch();
-  // const { user } = useSelector(({ auth }) => ({
-  //   user: auth.user,
-  // }));
-
-  // const userType = user?.arac?._id ? "arac" : "seeker";
 
   return (
     <Tab.Navigator
@@ -80,10 +75,6 @@ function TabNavigation() {
         component={View}
         options={({ navigation }) => ({
           tabBarButton: (props) => (
-            // <TouchableOpacity
-            //   {...props}
-            //   onPress={() => navigation.navigate("SignIn")}
-            // />
             <View
               style={{
                 position: "relative",

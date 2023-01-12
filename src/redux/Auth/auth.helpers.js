@@ -1,4 +1,3 @@
-import { BASE_URL } from "@constants/config.js";
 import { dummy1, dummy2, dummy4, dummy5 } from "@assets/dummyStories";
 import {
   dummyAvatar1,

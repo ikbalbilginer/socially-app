@@ -8,5 +8,4 @@ export const rootReducer = combineReducers({
   chat: chatReducer,
 });
 
-// export default persistReducer(configStorage, rootReducer);
 export default rootReducer;

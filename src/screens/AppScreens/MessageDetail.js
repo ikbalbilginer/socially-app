@@ -1,32 +1,20 @@
 import React, { useState } from "react";
-import {
-  StyleSheet,
-  View,
-  ScrollView,
-  ImageBackground,
-  Image,
-  TextInput,
-  FlatList,
-} from "react-native";
-import { Entypo } from "@expo/vector-icons";
+import { StyleSheet, View, Image, TextInput, FlatList } from "react-native";
 import sendbtn from "@assets/sendbtn.png";
 import CustomHeader from "@components/shared/CustomHeader";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Text } from "@components";
 import { Feather } from "@expo/vector-icons";
 import { hp, wp } from "@utils/responsive";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 const MessageDetail = ({ navigation }) => {
   const [searchVal, setSearchVal] = useState();
-  const dispatch = useDispatch();
 
   const { chatDetails } = useSelector(({ chat }) => ({
     chatDetails: chat.chatDetails,
   }));
-
-  const onSearchChange = () => {};
 
   return (
     <SafeAreaView edges={["top", "bottom"]} style={styles.safeArea}>
