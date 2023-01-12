@@ -20,8 +20,8 @@ const Home = ({ navigation }) => {
         <ScrollView style={styles.scrollView}>
           <PageTitle title="Feed" />
           <StoriesBar stories={stories} />
-          {feed.map((feedItem) => (
-            <FeedCard item={feedItem} />
+          {feed.map((feedItem, ind) => (
+            <FeedCard key={ind} item={feedItem} />
           ))}
         </ScrollView>
       </SafeAreaView>
